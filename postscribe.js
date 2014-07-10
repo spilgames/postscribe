@@ -642,7 +642,7 @@
         // restore window.onerror
         active.win.onerror = oldOnError;
 
-        options.done();
+        options.done(active.root.id);
         active = null;
         nextStream();
       });
